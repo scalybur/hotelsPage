@@ -1,12 +1,45 @@
 {
+
   "name": "hotelspage",
   "version": "1.0.0",
   "description": "Almundo project",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "gulp-load-plugins": "^1.5.0",
+    "co-router": "^1.0.4",
+    "gulp-concat": "^2.6.1",
+    "mongoose": "^4.9.3",
+    "pug": "^2.0.0-beta11"
+
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-order": "^1.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^7.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^1.5.3",
+    "jade": "^1.11.0",
+    "lite-server": "^2.2.2",
+    "main-bower-files": "^2.13.1",
+    "merge-stream": "^1.0.0",
+    "stream-series": "^0.1.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server/"
   },
   "repository": {
     "type": "git",
@@ -19,3 +52,4 @@
   },
   "homepage": "https://github.com/nahuelcabrera/hotelsPage#readme"
 }
+
