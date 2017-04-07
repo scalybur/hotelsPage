@@ -1,0 +1,21 @@
+{
+  "name": "hotelspage",
+  "version": "1.0.0",
+  "description": "Almundo project",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nahuelcabrera/hotelsPage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nahuelcabrera/hotelsPage/issues"
+  },
+  "homepage": "https://github.com/nahuelcabrera/hotelsPage#readme"
+}
