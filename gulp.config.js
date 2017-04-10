@@ -28,7 +28,7 @@ module.exports = function () {
         templateCache: {
             file: 'app.templates.js',
             options: {
-                module: 'todos',
+                module: 'resultHotelesComponent',
                 moduleSystem: "IIFE"
             }
         },
@@ -37,7 +37,7 @@ module.exports = function () {
             sass: `${src}**/*.scss`,
             js: [`${src}**/*.js`, `!${src}**/*.templates.js`],
             html: `${src}**/*.html`,
-            jade: `${src}**/*.jade`
+            jade: `${src}**/*.pug`
 
         }
     };

@@ -1,1 +1,1 @@
-HElloo
+console.log("Hello");
