@@ -1,3 +1,9 @@
-(function () {
-    angular.module('appPrime', [])
+(function (){
+    'use strict';
+
+    angular
+        .module('appPrime', [
+            'hotelsResult',
+            'slider'
+        ]);
 })();
