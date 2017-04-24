@@ -6,6 +6,7 @@
     angular.module('hotelsResultModule')
         .component('filterComponent',
     {
+        bindings
         controller:filterController,
         templateUrl:"./filterComponent.html"
 
