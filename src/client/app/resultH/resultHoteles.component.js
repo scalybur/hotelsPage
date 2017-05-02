@@ -8,7 +8,7 @@
         .module('hotelsResultModule')
         .component('hotelsResultComponent', {
             controller: hotelsResultController,
-            templateUrl: "hotel-result/hotels-root.html"
+            templateUrl: "resultContainerItems/ResultHoteles.html"
         });
 
 
