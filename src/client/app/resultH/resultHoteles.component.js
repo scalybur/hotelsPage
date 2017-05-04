@@ -1,25 +1,49 @@
-/**
- * Created by nahuelcabrera on 10/04/17.
- */
-(function (){
+(function () {
     'use strict';
 
     angular
         .module('hotelsResultModule')
         .component('hotelsResultComponent', {
+            bindings: {},
             controller: hotelsResultController,
-            templateUrl: "resultContainerItems/ResultHoteles.html"
+            templateUrl: "resultH/resultHoteles.html"
         });
 
+    hotelsResultController.$inject = ['hotelsResultService'];
 
-    hotelsResultController.$inject = ['HotelService'];
+    function hotelsResultController(hotelsResultService) {
+        const self = this;
 
-
-    function hotelsResultController(HotelService) {
-        var _self = this;
-        this.getho = function (){
-            return HotelService.getHotels();
+        this.$onInit = function () {
+            hotelsResultService.getHotels().then(function (hotels) {
+                self.hotels = hotels;
+            });
+            this.filters = {
+                "name" : "",
+                "targetName" : "",
+                "price":{
+                    "priceMin" : 200,
+                    "priceMax": 2500,
+                },
+                "stars":{
+                    "five": true,
+                    "four": false,
+                    "three" : false,
+                    "two" : false,
+                    "one" : false
+                },
+            }
         };
+
+        this.getHotels = function () {
+            return self.hotels;
+        };
+
+        this.resetFilters = function (){
+            hotelsResultService.getHotels().then(function (hotels) {
+                self.hotels = hotels;
+            });
+        }
     }
 
 })();

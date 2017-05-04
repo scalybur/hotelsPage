@@ -2,9 +2,9 @@ const config = require('./gulp.config.js')();
 const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
 const plugs = gulpLoadPlugins();
+const env = process.env.NODE_ENV || 'local';
 const eventStream = require('event-stream');
 const merge = require('merge-stream');
-const env = process.env.NODE_ENV || 'local';
 
 
 var optimize = false;
@@ -78,6 +78,15 @@ return eventStream.merge(templateCacheStream, scriptsStream)
 });
 
 
+////////////FONTS///////////
+
+gulp.task('fonts', function ()
+{
+    return  gulp.src('./src/client/fonts/**/*.{eot,svg,ttf,woff,woff2}')
+        .pipe(gulp.dest(config.build));
+
+});
+
 /////////////////INJECT//////////////
 
 
@@ -91,11 +100,10 @@ gulp.task('inject', ['bundle'], () => {
     const seriesStreams = series(scriptLib, styleApp, scriptApp);
 
     return gulp.src(`${config.build}index.html`)
-        .pipe(plugs.inject(seriesStreams,
-            {
-                addPrefix: '/static',
-                relative: true
-            }))
+        .pipe(plugs.inject(seriesStreams, {
+            addPrefix:'/static',
+            relative: true
+        }))
         .pipe(gulp.dest(config.build));
 });
 
@@ -118,7 +126,8 @@ gulp.task('bundle', ['watch'], () => {
 });
 
 
-gulp.task('default', ['inject','build','nodemon', 'watch']);
+gulp.task('default', ['inject','build','fonts','nodemon', 'watch']);
+
 
 /////////////////////////////////////////
 
@@ -132,12 +141,6 @@ gulp.task('watch', ()=> {
     gulp.watch(config.files.jade, ['scripts-app']);
     gulp.watch(config.files.js, ['scripts-app']);
     gulp.watch(config.files.sass, ['styles-app']);
-    /*gulp.watch(config.index, function ()
-    {
-        return gulp.src(`${config.index}`)
-            .pipe(gulp.dest(config.build));
-    });*/
-
 });
 
 

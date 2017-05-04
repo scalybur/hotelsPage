@@ -1,34 +1,24 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-
-    <title>Almundo - Encontrá tu hotel, al mejor precio</title>
-
-    <link rel="stylesheet" href="">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-    <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+    <meta charset="utf-8">
+    <title>Hoteles Almundo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="/src/client/vendor/angular/angular.js"></script>
     <script src="/build/hotelspage.js"></script>
 
-
-    <script src="/src/client/vendor/angular/angular.js"></script>
-
-    <script src="app/app.module.js"></script>
-
-
-
+    <link rel="icon" href="./src/client/img/almundo.ico" type="image/gif" sizes="16x16">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="build/hotelspage.css">
 </head>
-<body ng-app="app-prime">
 
 
-    <header></header>
-
-
-    <hotels-root></hotels-root>
-
-
+<body ng-app="appPrime">
+<hotels-result-component></hotels-result-component>
 </body>
 </html>

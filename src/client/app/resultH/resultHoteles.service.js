@@ -8,7 +8,7 @@
 
     angular
         .module('hotelsResultModule')
-        .service('HotelsResultService', HotelService);
+        .service('hotelsResultService', HotelService);
 
     HotelService.$inject = [];
 

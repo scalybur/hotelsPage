@@ -5,8 +5,8 @@ module.exports = function () {
 
     const server = './server/';
     const src = './src/';
-    const scssfolder = `${src }client/scss/`;
-    const mainscss = `${scssfolder }styles.scss`;
+    const scssfolder = `${src }client/sass/`;
+    const mainscss = `${scssfolder }styles.sass`;
     const build = './build/';
     const appFolder = `${src}client/app/`;
     const index = `${src }client/index.html`;
@@ -27,7 +27,7 @@ module.exports = function () {
         templateCache: {
             file: 'app.templates.js',
             options: {
-                module: 'resultHotelesComponent',
+                module: 'appPrime',
                 moduleSystem: "IIFE"
             }
         },
