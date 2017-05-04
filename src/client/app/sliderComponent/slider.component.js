@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('slider')
+        .module('sliderModule')
         .component('sliderComponent', {
             controller: sliderController,
             bindings: {

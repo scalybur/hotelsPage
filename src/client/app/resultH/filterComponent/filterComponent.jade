@@ -1,10 +1,17 @@
-div.filterContainer
-    block.classA
+.filters-root-ctn
+    ul
+        li
 
-    div.filterContainerTwo
+            filterHeader
 
-        div.searchNameContainer
+            h4(ng-init="hidefilters=false", ng-click="hidefilters=!hidefilters") Filtrar <i class="fa fa-caret-down" aria-hidden="true"></i>
 
-        div.pricePerNightContainer
+        li
 
-        div.starsContainer
+            searchName(filters ='$ctrl.filtersController', ng-show="!hidefilters")
+        li
+
+            searchPrice(filters ='$ctrl.filtersController', ng-show="!hidefilters")
+        li
+
+            searchStars(filters ='$ctrl.filtersController', ng-show="!hidefilters")

@@ -4,7 +4,7 @@
     angular
         .module('appPrime', [
             'hotelsResult',
-            'slider',
-            'filterModule'
+            'sliderModule',
+            'filterModule',
         ]);
 })();

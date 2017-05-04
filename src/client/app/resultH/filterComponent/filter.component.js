@@ -1,21 +1,15 @@
-/**
- * Created by nahuelcabrera on 24/04/17.
- */
-(function ()
-{
-    angular.module('hotelsResultModule')
-        .component('filterComponent',
-    {
-        controller:filterController,
-        templateUrl:"./filterComponent.html"
+(function () {
+    'use strict';
 
-    }).controller('starsController', ['$scope', function($scope)
-    {
-        $scope.checkboxModel =
-            {
-                value1 : true,
-                value2 : 'YES'
-            };
-    }]);
+    angular
+        .module('filterModule')
+        .component('filterRootComponent', {
+            controller : filtersController,
+            bindings: {
+                "filters" :'<',
+            },
+            templateUrl: 'resultH/filterComponent/filterComponent.html'
+        });
 
+    function filtersController (){}
 })();

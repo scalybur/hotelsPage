@@ -3,19 +3,44 @@
   height: 100%
   width: 100%
   .items-ctn
-    li
-      img
-        width: 100%
+    background-color: #777
+    width: 100%
+    height: 100%
+    justify-content: center
+    ul
+      padding: 0px
+      li
+        img
+          width: 100%
+          position: center
   .nav-ctn
     position: absolute
     width: 100%
     top: 50%
     left: 0
     li
+      z-index: 1
       position: absolute
       cursor: pointer
       font-size: 18px
       &.prev
+        padding: 0px 8px
         left: 0
+        position: absolute
+        z-index: 1
+        top: calc(50% - 12px)
+        background-color: white
+        border-radius: 50%
+        color: #157ab1
+        font-size: 18px
+        left: 8px
       &.next
-        right: 0
+        padding: 0px 8px
+        right: 8px
+        position: absolute
+        z-index: 1
+        color: #157ab1
+        top: calc(50% - 12px)
+        background-color: white
+        border-radius: 50%
+        font-size: 18px
