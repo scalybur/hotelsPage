@@ -4,12 +4,16 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
+//API ROUTE
+const hotelsApi = require('./hotel-result/hotel-result-route');
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
 //Project folder
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname+'/../client/index.html')));
+app.use('/api/hotels', hotelsApi);
 
 //Static Routes
 

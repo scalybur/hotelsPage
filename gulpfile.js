@@ -10,7 +10,8 @@ const merge = require('merge-stream');
 var optimize = false;
 
 
-if (env === 'staging' || env === 'production') {
+if (env === 'staging' || env === 'production')
+{
 
     optimize = true;
 }
@@ -19,7 +20,8 @@ if (env === 'staging' || env === 'production') {
 
 ////////////////JADE COMPILE/////////////////
 
-gulp.task('compile-jade', () => {
+gulp.task('compile-jade', () =>
+{
 
     return gulp
         .src(`${config.appFolder }**/*.jade`)
@@ -31,7 +33,8 @@ gulp.task('compile-jade', () => {
 
 ///////////////////SASS INTO CSS///////////
 
-gulp.task('styles-app', () => {
+gulp.task('styles-app', () =>
+{
 
     return gulp
         .src(config.mainscss)
@@ -47,7 +50,8 @@ gulp.task('styles-app', () => {
 /////////////////////CONCAT VENDOR JS FILES////////////////
 
 
-gulp.task('scripts-lib', () => {
+gulp.task('scripts-lib', () =>
+{
     const mainBowerFiles = require('main-bower-files');
 return gulp
     .src(mainBowerFiles('**/*.js'))
@@ -59,7 +63,8 @@ return gulp
     .pipe(gulp.dest(config.build));
 });
 
-gulp.task('scripts-app', ['compile-jade'], () => {
+gulp.task('scripts-app', ['compile-jade'], () =>
+{
 
 
     var scriptsStream = gulp.src(config.appFolder + '**/*.js'),
@@ -90,7 +95,8 @@ gulp.task('fonts', function ()
 /////////////////INJECT//////////////
 
 
-gulp.task('inject', ['bundle'], () => {
+gulp.task('inject', ['bundle'], () =>
+{
 
     const series = require('stream-series');
     // It's not necessary to read the files (will speed up things), we're only after their paths:
@@ -109,7 +115,8 @@ gulp.task('inject', ['bundle'], () => {
 
 /////////////////////BUNDLE TASK//////////////////////
 
-gulp.task('bundle', ['watch'], () => {
+gulp.task('bundle', ['watch'], () =>
+{
 
     return gulp.src(`${config.index}`)
         .pipe(gulp.dest(config.build));
@@ -119,7 +126,8 @@ gulp.task('bundle', ['watch'], () => {
 //////////////////////BUNDLE-DEFAULT///////////////////////
 
 
-gulp.task('bundle', ['watch'], () => {
+gulp.task('bundle', ['watch'], () =>
+{
 
     return gulp.src(`${config.index}`)
         .pipe(gulp.dest(config.build));
@@ -136,7 +144,8 @@ gulp.task('build', ['styles-app', 'scripts-lib', 'scripts-app']);
 
 
 
-gulp.task('watch', ()=> {
+gulp.task('watch', ()=>
+{
 
     gulp.watch(config.files.jade, ['scripts-app']);
     gulp.watch(config.files.js, ['scripts-app']);
@@ -145,7 +154,8 @@ gulp.task('watch', ()=> {
 
 
 
-gulp.task('nodemon', () => {
+gulp.task('nodemon', () =>
+{
     plugs.nodemon({
         script: './src/server/index.js',
         ext: 'js html',
