@@ -2,16 +2,16 @@
     ul
         li
 
-            filterHeader
+            header-component
 
             h4(ng-init="hidefilters=false", ng-click="hidefilters=!hidefilters") Filtrar <i class="fa fa-caret-down" aria-hidden="true"></i>
 
         li
 
-            searchName(filters ='$ctrl.filtersController', ng-show="!hidefilters")
+            search-name-controller(filters ='$ctrl.filtersController', ng-show="!hidefilters")
         li
 
-            searchPrice(filters ='$ctrl.filtersController', ng-show="!hidefilters")
+            search-price(filters ='$ctrl.filtersController', ng-show="!hidefilters")
         li
 
-            searchStars(filters ='$ctrl.filtersController', ng-show="!hidefilters")
+            search-stars(filters ='$ctrl.filtersController', ng-show="!hidefilters")

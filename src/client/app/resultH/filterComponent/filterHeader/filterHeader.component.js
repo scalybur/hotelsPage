@@ -7,6 +7,6 @@
     angular.module('filterModule')
         .component('headerComponent',
             {
-                templateUrl:'./filterHeader.html'
+                templateUrl:'resultH/filterComponent/filterHeader/filterHeader.html'
             })
 })();

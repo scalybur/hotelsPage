@@ -8,7 +8,7 @@
     angular.module('filterModule')
         .controller('searchNameController',
             {
-                templateUrl:"./searchName.html"
+                templateUrl:"resultH/filterComponent/searchName/searchName.html"
             })
 
 })();

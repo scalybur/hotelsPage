@@ -6,6 +6,6 @@
     'use strict';
 
     angular
-        .module('hotelsResultModule', []);
+        .module('hotelsResultModule', ['breadcrumbModule', 'filterModule', ]);
 
 })();

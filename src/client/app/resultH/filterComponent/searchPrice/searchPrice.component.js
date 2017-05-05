@@ -1,3 +1,11 @@
-/**
- * Created by nahuelcabrera on 24/04/17.
- */
+(function ()
+{
+    'use strict';
+
+    angular.module('filterModule')
+        .controller('searchPriceController',
+            {
+                templateUrl:"resultH/filterComponent/searchPrice/searchPrice.html"
+            })
+
+})();

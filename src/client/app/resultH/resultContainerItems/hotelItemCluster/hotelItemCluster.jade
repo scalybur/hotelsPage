@@ -1,14 +1,12 @@
 .cluster
     .sliderdiv
-        slider(items="$ctrl.item.images")
-
+        slider-component(items="$ctrl.item.images")
     .details
         h2 {{$ctrl.item.name}}
         a(ng-repeat = ("star in $ctrl.stars() track by $index")) <i class="fa fa-star" aria-hidden="true"></i>
         h3 <i class="fa fa-bed" aria-hidden="true"></i> {{$ctrl.item.descrip}}
         ul
             li(ng-repeat="(key, value) in $ctrl.item.amenities" ng-class="$ctrl.getIcon(key)")
-                //- p.amt-payment-methods
     .pricebox
         p Precio por noche por <br/>habitación <br/>
         .price <span class="tmoneda">ARS</span><span class="number">{{$ctrl.item.price}}</span>

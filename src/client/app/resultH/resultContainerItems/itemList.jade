@@ -1,3 +1,4 @@
 ul
-    li(ng-repeat="hotel in $ctrl.hotels | filter: filterHotel | filter: filterStar | limitTo: 10")
-        item(item='hotel')
+    li(ng-repeat="hotel in $ctrl.hotels")
+        item-component(item='hotel')
+       // | filter: filterHotel | filter: filterStar | limitTo: 10"

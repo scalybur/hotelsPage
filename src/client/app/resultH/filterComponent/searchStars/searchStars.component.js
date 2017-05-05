@@ -1,3 +1,11 @@
-/**
- * Created by nahuelcabrera on 24/04/17.
- */
+(function ()
+{
+    'use strict';
+
+    angular.module('filterModule')
+        .controller('searchStarsController',
+            {
+                templateUrl:"resultH/filterComponent/searchStars/searchStars.html"
+            })
+
+})();

@@ -5,6 +5,6 @@
         .module('appPrime', [
             'hotelsResultModule',
             'sliderModule',
-            'filterModule',
+            'filterModule'
         ]);
 })();
