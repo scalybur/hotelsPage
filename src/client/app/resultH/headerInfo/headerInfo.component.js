@@ -3,8 +3,8 @@
   'use strict';
 
   angular
-  .module('hotelsResult')
+  .module('hotelsResultModule')
   .component('searchHeader', {
-    templateUrl: 'hotel-result/headerInfo/headerInfo.html'
+    templateUrl: 'resultH/headerInfo/headerInfo.html'
   });
 })();
