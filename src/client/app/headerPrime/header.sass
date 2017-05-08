@@ -1,14 +1,25 @@
 .headerMain
   width: 100%
+  display: block
+
 //////////DIV HEADER MAIN////////////
 .divHeaderMain
-  width: 100%
+  //width: 100%
   height: auto
   background: #002f71
   background: -moz-linear-gradient(left, #002f71 1%, #1b4985 100%)
   background: -webkit-linear-gradient(left, #002f71 1%,#1b4985 100%)
   background: linear-gradient(to right, #002f71 1%,#1b4985 100%)
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f71', endColorstr='#1b4985',GradientType=1 )
+
+.linksHeaderMain
+  float: right
+  right: 50%
+  list-style-type: none
+  margin: 0 auto
+  padding: 0
+  position: relative
+
 
 .divHeaderMain li
   display: inline
@@ -24,6 +35,11 @@
 .helpTag
   color: #f4811a
 
+.logoAlmundo
+  padding: 8px
+.clubAlMundoHeader
+  line-height: -10px
+
 /////////NAVIGATOR-MENU/////////
 
 .divNavigatorMenu
@@ -33,24 +49,28 @@
   background: -webkit-linear-gradient(left, #013971 0%,#406992 100%)
   background: linear-gradient(to right, #013971 0%,#406992 100%)
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013971', endColorstr='#406992',GradientType=1 )
+  font-size: 24px
   border: solid 1px
   border-color: #243e77
-  height: 5%
+  line-height: 32px
 
 .divNavigatorMenu ul
   margin: 0
-  padding: 0 10%
+  padding: 0
   list-style-type: none
   text-align: center
   font-size: medium
   font-weight: bold
 
 .divNavigatorMenu ul li
+  margin: 0
+  padding: 0
   display: inline
 
 .divNavigatorMenu ul li a
-  text-decoration: none
+  margin: 0
   padding: .2em 1em
+  text-decoration: none
   color: #fff
 
 .divNavigatorMenu ul li a:hover

@@ -1,19 +1,21 @@
 header.headerMain
-    div.divHeaderMain
-        img.logoAlmundo(src="./src/client/img/logo-almundo.svg")
-        ul.linksHeaderMain
+    div.divHeaderMain.row
+        div.containLogoAlmundo.col-lg-6
+            img.logoAlmundo(src="./src/client/img/logo-almundo.svg")
+        ul.linksHeaderMain.col-lg-6
             li
-                a Ingresar
+                a(href='#') Ingresar
             li.clubAlMundoHeader
-                a ClubAlmundo
+                a(href='#')
+                    img(src="./src/client/img/logo-clubalmundo.svg")
             li
-                a Sucursales
+                a(href='#') Sucursales
             li
-                a Llámanos
+                a(href='#') Llámanos
             li.helpTag
-                a AYUDA
+                a(href='#') AYUDA
 
-    div.divNavigatorMenu
+    div.divNavigatorMenu.row
         ul.linksNavigatorMenu
             li
                 a Hoteles
