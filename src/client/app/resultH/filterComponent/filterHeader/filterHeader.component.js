@@ -3,7 +3,7 @@
     'use strict';
 
     angular.module('filterModule')
-        .component('headerComponent',
+        .component('headerSearchComponent',
             {
             bindings:{},
             require:

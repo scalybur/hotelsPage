@@ -1,5 +1,5 @@
 .container-fluid
-    h1 Mostrando resultH
+    header-component
     main.row
         div.breadcrumb-ctn.col-xs-12.col-sm-12.col-md-12.col-lg-12
             breadcrumb-component
@@ -9,7 +9,7 @@
         div.orderselect-ctn.col-xs-12.col-sm-12.col-md-12.col-lg-12
             order-select
         div.filters-root-ctn.col-xs-12.col-sm-12.col-md-12.col-lg-3
-            map
-            filter-root-component(filters="$ctrl.filters")
+            maps-component
+            filter-component(filters="$ctrl.filters")
         div.hotels-ctn(hotels-result-component).col-xs-12.col-sm-12.col-md-12.col-lg-9
             result-container-items-component(hotels = "$ctrl.getHotels()")

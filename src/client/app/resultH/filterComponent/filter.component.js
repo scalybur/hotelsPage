@@ -3,7 +3,7 @@
 
     angular
         .module('filterModule')
-        .component('filterRootComponent', {
+        .component('filterComponent', {
             controller : filtersController,
             bindings: {
                 "filters" :'<',
