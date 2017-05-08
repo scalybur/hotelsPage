@@ -1,6 +1,7 @@
-form(action='index.html')
-    | Nombre del Hotel
-    br
-    input(type='search', name='searchPerName')
-    span
-    input(type='submit', value='Buscar')
+.filterhotel
+    .filter-ctn
+        .filterheader(ng-init="hideHotelFilter=false" ng-click="hideHotelFilter=!hideHotelFilter")
+            h5 <i class="fa fa-search" aria-hidden="true"></i> Nombre del hotel <i class="fa fa-sort-asc" aria-hidden="true"></i>
+        .filtercontainer(ng-show="!hideHotelFilter" )
+            input(ng-model="$ctrl.filters.targetName" type='text', onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()", id="inputHotel", placeholder="Ingrese el nombre del hotel")
+            button(ng-click="$ctrl.filterHotel()" type='button', id="btnSearch",name='hotel') Aceptar

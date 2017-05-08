@@ -1,9 +1,7 @@
-/**
- * Created by nahuelcabrera on 24/04/17.
- */
-(function ()
-{
-    'use strict'
-    angular.module('filterModule', [])
+(function (){
 
+    'use strict';
+
+    angular
+        .module('filterModule', [])
 })();

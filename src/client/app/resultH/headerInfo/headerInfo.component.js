@@ -4,7 +4,7 @@
 
   angular
   .module('hotelsResultModule')
-  .component('searchHeader', {
+  .component('headerInfo', {
     templateUrl: 'resultH/headerInfo/headerInfo.html'
   });
 })();

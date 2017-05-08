@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('hotelsResultModule')
+        .module('filterModule')
         .component('filterRootComponent', {
             controller : filtersController,
             bindings: {

@@ -1,11 +1,20 @@
-(function ()
-{
+(function (){
     'use strict';
 
-    angular.module('filterModule')
-        .controller('searchPriceController',
-            {
-                templateUrl:"resultH/filterComponent/searchPrice/searchPrice.html"
-            })
+    angular
+        .module('filterModule')
+        .component('searchPriceComponent', {
+            controller: filterNightController,
+            bindings:{
+                "filters": '<'
+            },
+            templateUrl: "resultH/filterComponent/searchPrice/searchPrice.html"
+        });
 
+    function filterNightController(){
+
+        var self = this;
+
+
+    }
 })();
