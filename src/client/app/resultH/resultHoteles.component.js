@@ -14,19 +14,23 @@
     function hotelsResultController(hotelsResultService) {
         const self = this;
 
+        self.filterOnHotels = [];
+
         this.$onInit = function () {
-            hotelsResultService.getHotels().then(function (hotels) {
+            hotelsService.getHotels().then(function (hotels) {
                 self.hotels = hotels;
+                self.filterOnHotels = hotels;
             });
             this.filters = {
                 "name" : "",
                 "targetName" : "",
                 "price":{
-                    "priceMin" : 200,
-                    "priceMax": 2500,
+                    "priceMin" : 0,
+                    "priceMax": 5000,
                 },
                 "stars":{
-                    "five": true,
+                    "all": true,
+                    "five": false,
                     "four": false,
                     "three" : false,
                     "two" : false,
@@ -36,14 +40,8 @@
         };
 
         this.getHotels = function () {
-            return self.hotels;
+            return self.filterOnHotels;
         };
-
-        this.resetFilters = function (){
-            hotelsResultService.getHotels().then(function (hotels) {
-                self.hotels = hotels;
-            });
-        }
     }
 
 })();

@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="04a66856-2390-449e-859d-2a21b4fd5125" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/resultH/breadcrumbComponent/breadcrumb.html" afterPath="$PROJECT_DIR$/src/client/app/resultH/breadcrumbComponent/breadcrumb.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/resultH/breadcrumbComponent/breadcrumb.jade" afterPath="$PROJECT_DIR$/src/client/app/resultH/breadcrumbComponent/breadcrumb.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/resultH/headerInfo/headerInfo.sass" afterPath="$PROJECT_DIR$/src/client/app/resultH/headerInfo/headerInfo.sass" />
     </list>
+=======
+    <list default="true" id="04a66856-2390-449e-859d-2a21b4fd5125" name="Default" comment="" />
+>>>>>>> 305649a94d0ffe04618c0b6a4dc8e4d02a47e1c1
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -30,11 +34,19 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="breadcrumb.component.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/app/resultH/breadcrumbComponent/breadcrumb.component.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+      <file leaf-file-name="header.sass" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/client/app/headerPrime/header.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+>>>>>>> 305649a94d0ffe04618c0b6a4dc8e4d02a47e1c1
               <folding />
             </state>
           </provider>
@@ -70,11 +82,19 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="headerInfo.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/app/resultH/headerInfo/headerInfo.sass">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="267">
               <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+=======
+      <file leaf-file-name="filterHeader.component.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/app/resultH/filterComponent/filterHeader/filterHeader.component.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+>>>>>>> 305649a94d0ffe04618c0b6a4dc8e4d02a47e1c1
               <folding />
             </state>
           </provider>
@@ -176,12 +196,15 @@
         <option value="$PROJECT_DIR$/src/client/app/resultH/resultH.sass" />
         <option value="$PROJECT_DIR$/src/client/app/headerPrime/header.jade" />
         <option value="$PROJECT_DIR$/src/client/app/resultH/resultHoteles.jade" />
-        <option value="$PROJECT_DIR$/src/client/app/headerPrime/header.sass" />
         <option value="$PROJECT_DIR$/src/client/app/resultH/filterComponent/searchName/searchName.component.js" />
         <option value="$PROJECT_DIR$/src/client/app/resultH/filterComponent/searchStars/searchStars.component.js" />
         <option value="$PROJECT_DIR$/src/client/app/resultH/filterComponent/filterHeader/filterHeader.component.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/client/app/resultH/headerInfo/headerInfo.sass" />
         <option value="$PROJECT_DIR$/src/client/app/resultH/breadcrumbComponent/breadcrumb.jade" />
+=======
+        <option value="$PROJECT_DIR$/src/client/app/headerPrime/header.sass" />
+>>>>>>> 305649a94d0ffe04618c0b6a4dc8e4d02a47e1c1
       </list>
     </option>
   </component>
@@ -550,15 +573,22 @@
       <workItem from="1493904997516" duration="3073000" />
       <workItem from="1493910073925" duration="13000" />
       <workItem from="1493916562297" duration="23372000" />
-      <workItem from="1494248909477" duration="5901000" />
+      <workItem from="1494248909477" duration="6625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="120049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="119556000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="53" y="-4" width="1313" height="772" extended-state="7" />
+>>>>>>> 305649a94d0ffe04618c0b6a4dc8e4d02a47e1c1
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28050596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -887,18 +917,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/headerPrime/header.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/app/resultH/resultHoteles.component.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/resultH/filterComponent/filterHeader/filterHeader.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="90">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+=======
+        <state relative-caret-position="270">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+>>>>>>> 305649a94d0ffe04618c0b6a4dc8e4d02a47e1c1
         </state>
       </provider>
     </entry>
@@ -916,8 +952,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/resultH/filterComponent/filterHeader/filterHeader.component.js">
+    <entry file="file://$PROJECT_DIR$/src/client/app/headerPrime/header.sass">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="229">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
         </state>
@@ -967,6 +1004,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+=======
+        <state relative-caret-position="162">
+          <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+>>>>>>> 305649a94d0ffe04618c0b6a4dc8e4d02a47e1c1
           <folding />
         </state>
       </provider>

@@ -3,7 +3,6 @@
 
     angular
         .module('appPrime', [
-            'headerModule',
             'hotelsResultModule',
             'sliderModule',
             'filterModule'

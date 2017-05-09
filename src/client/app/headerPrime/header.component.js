@@ -1,8 +1,10 @@
-( function () {
+(function (){
+
     'use strict';
+
     angular
-        .module('headerModule')
-        .component('headerComponent', {
+        .module('hotelsResultModule')
+        .component('headerComponent',{
             templateUrl: "headerPrime/header.html"
         });
 })();
