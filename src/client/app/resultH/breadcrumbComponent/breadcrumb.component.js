@@ -1,9 +1,9 @@
 (function (){
 
-    'use strict'
+    'use strict';
 
     angular
-        .module('breadcrumbModule')
+        .module('hotelsResultModule')
         .component('breadcrumbComponent', {
             templateUrl: 'resultH/breadcrumbComponent/breadcrumb.html'
         });
