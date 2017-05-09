@@ -15,9 +15,10 @@ class HotelResultService
            "https://images.almundo.com/201/1000000/10000/8100/8092/8092_106_b.jpg"
          ],
          "amenities": {
-           "wifi": "wifi",
-           "tel": "telefono",
-           "sp": "Spa"
+             "wifi": "wifi",
+             "pay": "payform",
+             "par": "Parking",
+             "bar" :"bares"
          }
        },
        {
@@ -36,7 +37,7 @@ class HotelResultService
          "amenities": {
            "wifi": "wifi",
            "tel": "telefono",
-           "sp": "Spa"
+           "bar": "bares"
          }
        },
        {
@@ -54,8 +55,7 @@ class HotelResultService
          ],
          "amenities": {
            "wifi": "wifi",
-           "tel": "telefono",
-           "sp": "Spa"
+           "tel": "telefono"
          }
        },
        {
@@ -72,9 +72,11 @@ class HotelResultService
            "https://placehold.it/350x230"
          ],
          "amenities": {
-           "wifi": "wifi",
-           "tel": "telefono",
-           "sp": "Spa"
+             "wifi": "wifi",
+             "pay": "payform",
+             "par": "Parking",
+             "tel": "telefono",
+             "sp": "Spa"
          }
        },
        {
@@ -91,9 +93,8 @@ class HotelResultService
            "https://placehold.it/350x230"
          ],
          "amenities": {
-           "wifi": "wifi",
            "tel": "telefono",
-           "sp": "Spa"
+           "pay": "payform"
          }
        },
        {
@@ -129,9 +130,10 @@ class HotelResultService
            "https://placehold.it/350x230"
          ],
          "amenities": {
-           "wifi": "wifi",
-           "tel": "telefono",
-           "sp": "Spa"
+             "wifi": "wifi",
+             "tel": "telefono",
+             "pay": "payform",
+             "par": "Parking"
          }
        }
      ];
