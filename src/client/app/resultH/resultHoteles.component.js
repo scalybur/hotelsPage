@@ -26,7 +26,7 @@
                 "targetName" : "",
                 "price":{
                     "priceMin" : 0,
-                    "priceMax": 5000
+                    "priceMax": 20000
                 },
                 "stars":{
                     "all": true,
