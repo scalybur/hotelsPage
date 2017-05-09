@@ -34,7 +34,7 @@ module.exports = function () {
         jsOrder: ['**/app.module.js', '**/*.module.js', '**/*.js'],
         files: {
             sass: `${src}**/*.sass`,
-            js: [`${src}**/*.js`, `!${src}**/*.templates.js`],
+            js: [`${src}/client/app/**/*.js`, `!${src}**/*.templates.js`],
             html: `${src}**/*.html`,
             jade: `${src}**/*.jade`
 
