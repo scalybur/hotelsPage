@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "angular": "^1.6.4",
-    "angularjs-slider": "^6.1.1"
+    "angularjs-slider": "^6.1.1",
+    "angular-i18n":"^1.6.4"
   }
 }
