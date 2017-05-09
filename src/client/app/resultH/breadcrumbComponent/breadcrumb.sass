@@ -1,19 +1,24 @@
-.breadcrumb-ctn
-  @media only screen and (min-width: 1366px)
-    //display: inline-flex
-    //margin: 4px 10px
-    display: block
-    line-height: 16px
-    //line-height: 1rem
-    font-size: 12px
-    //font-size: 0.75rem
-    font-weight: 400
-    margin: 8px 0 8px
-    margin-bottom: 8px
-    border-bottom: 1px solid #CCC
-    p
-      color: #157ab1
-    a
-      text-decoration: none
-      &:hover
-        color: #1a99df
+.breadcrumbUl
+  list-style: none
+  overflow: hidden
+
+.breadcrumbUl li
+  font-size: 13px
+  float: left
+  color: #908b8e
+  text-decoration: none
+  padding: 8px 0 0 5px
+  position: relative
+  display: block
+
+.breadcrumbUl a
+  color: #0e4af0
+  text-decoration: none
+  transition: color 2s ease
+  &:hover
+    color: #0db9f0
+
+.hereCrumb
+  transition: color 2s ease
+  &:hover
+    color: #0db9f0
