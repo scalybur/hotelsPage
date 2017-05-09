@@ -1,6 +1,6 @@
 .filterheader
   .filter-ctn
-    @media only screen and (min-width : 992px)
+    @media only screen and (min-width: 1366px)
       box-shadow: 0px 1px 3px 0px rgba(119, 119, 119, 0.3)
       background-color: white
       margin-bottom: -4px
@@ -9,7 +9,7 @@
         display: none
       .delete-filter
         display: none
-      @media only screen and (min-width : 992px)
+      @media only screen and (min-width: 1366px)
         h4
           font-size: 16px
           line-height: 24px
@@ -17,14 +17,20 @@
           font-weight: bold
           box-shadow: none
           box-sizing: none
-          color: black
+          color: #242121
           background-color: white
           display: inline-flex
         .delete-filter
+          margin: -9px
           font-size: 12px
           display: inline
           line-height: 16px
-          color: #1a99df
+          color: #157ab1
+          &:hover
+            color: #1a99df
           cursor: pointer
           display: inline-flex
           padding-left: 100px
+        .fa-times
+          margin: 0px 10px
+          font-size: 14px

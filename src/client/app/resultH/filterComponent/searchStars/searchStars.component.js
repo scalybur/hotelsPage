@@ -12,40 +12,50 @@
                 "filters" : '<'
             },
             templateUrl: "resultH/filterComponent/searchStars/searchStars.html"
-        });
+        }).filter('filterStar', function (){
+        return function (hotels, stars) {
+            return hotels.filter(function (hotel) {
+                Math.ceil(hotel.stars);
+                if(stars.all){
+                    return hotel;
+                }
+                else if(stars.five && hotel.stars == 5){
+                    return hotel;
+                }
+                else if(stars.four && hotel.stars == 4){
+                    return hotel;
+                }
+                else if(stars.three && hotel.stars == 3){
+                    return hotel;
+                }
+                else if(stars.two && hotel.stars == 2){
+                    return hotel;
+                }
+                else if(stars.one && hotel.stars == 1){
+                    return hotel;
+                }
+            });
+        }
+    });
 
     function filterStarController (){
 
+        let self = this;
+        //me guardo referencia del Scope Padre y en el hijo lo uso como self para acceder a las variables del padre
+        this.allStars = function (){
+            this.hotelsResultController.filterOnHotels = this.hotelsResultController.hotels;
+        };
 
-        var self = this;
+        this.singleCheckbox = function () {
+            self.filters.stars.all = false;
+        };
 
-        this.filterStar = function (){
-
-            var five =  document.getElementById('allstars').value;
-            var four =  document.getElementById('4stars').value;
-            var three = document.getElementById('3stars').value;
-            var two =   document.getElementById('2stars').value;
-            var one =   document.getElementById('1stars').value;
-
-            let hotels = this.hotelsResultController.hotels;
-
-            for(var i = 1; i<=hotels.length ; i++){
-                if(five && self.filters.stars.five){
-                    return hotels.stars == 5;
-                }
-                else if(four && self.filters.stars.four){
-                    return hotels.stars == 4;
-                }
-                else if(three && self.filters.stars.three){
-                    return hotels.stars == 3;
-                }
-                else if(two && self.filters.stars.two){
-                    return hotels.star == 2;
-                }
-                else if(one && self.filters.stars.one){
-                    return hotels.star = 1
-                }
-            }
+        this.allStarsCheckbox = function (){
+            self.filters.stars.five = false;
+            self.filters.stars.four = false;
+            self.filters.stars.three = false;
+            self.filters.stars.two = false;
+            self.filters.stars.one = false;
         }
     }
 })();

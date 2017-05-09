@@ -8,9 +8,16 @@
     angular
         .module('hotelsResultModule')
         .component('resultContainerItemsComponent', {
+            controller: itemListController,
             bindings: {
-                hotels: '<'
+                hotels: '<',
+                filters: '<'
             },
             templateUrl: "resultH/resultContainerItems/itemList.html"
         });
+        function itemListController (){
+            let self = this;
+            let slicehotel = [];
+            this.loadMore = function () {}
+        }
 })();

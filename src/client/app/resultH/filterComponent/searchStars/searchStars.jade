@@ -3,19 +3,22 @@
         .filterheader(ng-init="hideStarFilter=false" ng-click="hideStarFilter=!hideStarFilter")
             h5 <i class="fa fa-star" aria-hidden="true"></i> Estrellas <i class="fa fa-sort-asc" aria-hidden="true"></i>
         .filtercontainer(ng-show="!hideStarFilter" )
-            input(type='checkbox', name='allstars', value='5', id="allstars", ng-click="$ctrl.filterStar()", ng-model="$ctrl.filters.stars.five", ng-checked="$ctrl.filters.stars.five")
+            input(type='checkbox', name='allstars', value='all', id="allstars", ng-change="$ctrl.allStars(); $ctrl.allStarsCheckbox()" ng-model="$ctrl.filters.stars.all", ng-disabled='$ctrl.filters.stars.all', ng-checked="$ctrl.filters.stars.all")
             |  Todas las Estrellas
             br
-            input(type='checkbox', name='4stars', value='4', id="4stars", ng-click="$ctrl.filterStar()", ng-model="$ctrl.filters.stars.four" )
-            |  <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i>
+            input( type='checkbox', name='5stars', value='5', id="5stars",  ng-change="$ctrl.filterStar(); $ctrl.singleCheckbox()", ng-model="$ctrl.filters.stars.five")
+            |  <i class="fa fa-star" ng-repeat="stars in [1, 2, 3, 4, 5] " aria-hidden="true"></i> {{($ctrl.countStars())}}
             br
-            input(type='checkbox', name='3stars', value='3', id="3stars",ng-click="$ctrl.filterStar()", ng-model="$ctrl.filters.stars.three" )
-            |  <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i>
+            input(type='checkbox', name='4stars', value='4', id="4stars", ng-change="$ctrl.filterStar(); $ctrl.singleCheckbox()", ng-model="$ctrl.filters.stars.four" )
+            |  <i class="fa fa-star" ng-repeat="stars in [1, 2, 3, 4]" aria-hidden="true"></i>
             br
-            input(type='checkbox', name='2stars', value='2', id="2stars", ng-click="$ctrl.filterStar()", ng-model="$ctrl.filters.stars.two")
-            |  <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i>
+            input(type='checkbox', name='3stars', value='3', id="3stars",ng-change="$ctrl.filterStar(); $ctrl.singleCheckbox()", ng-model="$ctrl.filters.stars.three" )
+            |  <i class="fa fa-star" ng-repeat="stars in [1, 2, 3]" aria-hidden="true"></i>
             br
-            input(type='checkbox', name='1stars', value='1', id="1stars", ng-click="$ctrl.filterStar()", ng-model="$ctrl.filters.stars.one")
-            |  <i class="fa fa-star" aria-hidden="true"></i>
+            input(type='checkbox', name='2stars', value='2', id="2stars", ng-change="$ctrl.filterStar(); $ctrl.singleCheckbox()", ng-model="$ctrl.filters.stars.two")
+            |  <i class="fa fa-star" ng-repeat="stars in [1, 2]" aria-hidden="true"></i>
             br
-    
+            input(type='checkbox', name='1stars', value='1', id="1stars", ng-change="$ctrl.filterStar(); $ctrl.singleCheckbox()", ng-model="$ctrl.filters.stars.one")
+            |  <i class="fa fa-star" ng-repeat="stars in [1]" aria-hidden="true"></i>
+            br
+

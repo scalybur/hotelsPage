@@ -2,5 +2,6 @@
     .filter-ctn
         .filterheader(ng-init="hideNightFilter=false" ng-click="hideNightFilter=!hideNightFilter")
             h5 <i class="fa fa-usd" aria-hidden="true"></i> Precio por noche <i class="fa fa-sort-asc" aria-hidden="true"></i>
-        .filtercontainer(ng-show="!hideNightFilter" )
-            input(type='range', name='points', min='0', max='10')
+        .filtercontainer(ng-show="!hideNightFilter")
+            <rzslider class="angularjsslider"  rz-slider-model="$ctrl.filters.price.priceMin" rz-slider-high="$ctrl.filters.price.priceMax" rz-slider-options="$ctrl.slider.options"></rzslider>
+

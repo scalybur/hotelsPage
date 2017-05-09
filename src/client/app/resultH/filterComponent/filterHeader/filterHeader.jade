@@ -2,6 +2,6 @@
     .filter-ctn
         .filterheader
             h4 Filtrar
-            span(class="delete-filter" ng-click="$ctrl.hotelsResultController.resetFilters(); $ctrl.filtersController.clearTargetName")<i class="fa fa-times" aria-hidden="true"></i> Eliminar Filtros
+            span(class="delete-filter" ng-click="$ctrl.hotelsResultController.$onInit()") <i class="fa fa-times" aria-hidden="true"></i> Eliminar Filtros
         .filtercontainer
 

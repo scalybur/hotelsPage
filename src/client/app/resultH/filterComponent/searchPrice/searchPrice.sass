@@ -13,7 +13,9 @@
         font-family: Roboto, sans-serif
         font-weight: bold
         line-height: 16px
-        color: #1a99df
+        color: #157ab1
+        &:hover
+          color: #1a99df
         .fa-usd
           margin-right: 12px
         .fa-sort-asc
@@ -22,8 +24,22 @@
           float: right
     .filtercontainer
       padding: 0px 16px 8px 16px
-      input
-        background-color: #777
-        height: 8px
-        margin-top: -4px
-        color: #CCC
+      .angularjsslider
+      .rzslider
+        .rz-limit
+          display: none
+        .rz-bar
+          background: #aaa
+          height: 8px
+        .rz-pointer
+          width: 16px
+          height: 32px
+          top: auto
+          bottom: -16px
+          background-color: white
+          border: 1px solid #333
+          border-radius: 10px
+        .rz-pointer-min::after
+          display: none
+        .rz-pointer-max::after
+          display: none

@@ -4,26 +4,16 @@
     angular
         .module('filterModule')
         .component('searchNameComponent', {
-            controller: filterHotelController,
-            require: {
-                hotelsResultController : 'hotelsResultController'
-            },
             bindings:{
                 "filters" : '<'
             },
-            templateUrl: "resultH/filterComponent/searchName/searchName.html"
-        });
-
-    function filterHotelController(){
+            templateUrl: 'resultH/filterComponent/searchName/searchName.html'
+        }).filter('filterHotel', function() {
         var self = this;
-
-        this.filterHotel = function () {
-
-            var hotels = this.hotelsResultController.hotels;
-            var hotelsFiltred = hotels.filter(function (hotel) {
-                return hotel.name.toLowerCase().indexOf(self.filters.targetName) != -1;
-            });
-            this.hotelsResultController.hotels = hotelsFiltred;
-        };
-    }
+        return function (hotels,targetName) {
+            return hotels.filter(function (hotel) {
+                return hotel.name.toLowerCase().indexOf(targetName.toLowerCase()) != -1;
+            })
+        }
+    })
 })();
