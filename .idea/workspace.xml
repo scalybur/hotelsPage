@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04a66856-2390-449e-859d-2a21b4fd5125" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/headerPrime/header.html" afterPath="$PROJECT_DIR$/src/client/app/headerPrime/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/headerPrime/header.jade" afterPath="$PROJECT_DIR$/src/client/app/headerPrime/header.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/headerPrime/header.sass" afterPath="$PROJECT_DIR$/src/client/app/headerPrime/header.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/resultH/filterComponent/filterHeader/filterHeader.component.js" afterPath="$PROJECT_DIR$/src/client/app/resultH/filterComponent/filterHeader/filterHeader.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/resultH/filterComponent/searchName/searchName.component.js" afterPath="$PROJECT_DIR$/src/client/app/resultH/filterComponent/searchName/searchName.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/resultH/filterComponent/searchStars/searchStars.component.js" afterPath="$PROJECT_DIR$/src/client/app/resultH/filterComponent/searchStars/searchStars.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/resultH/resultH.sass" afterPath="$PROJECT_DIR$/src/client/app/resultH/resultH.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/resultH/resultHoteles.jade" afterPath="$PROJECT_DIR$/src/client/app/resultH/resultHoteles.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/index.html" afterPath="$PROJECT_DIR$/src/client/index.html" />
-    </list>
+    <list default="true" id="04a66856-2390-449e-859d-2a21b4fd5125" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -36,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.sass" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/client/app/headerPrime/header.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            <state relative-caret-position="162">
+              <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -76,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filterHeader.component.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="filterHeader.component.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/app/resultH/filterComponent/filterHeader/filterHeader.component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
+            <state relative-caret-position="270">
               <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
@@ -184,10 +173,10 @@
         <option value="$PROJECT_DIR$/src/client/app/resultH/resultH.sass" />
         <option value="$PROJECT_DIR$/src/client/app/headerPrime/header.jade" />
         <option value="$PROJECT_DIR$/src/client/app/resultH/resultHoteles.jade" />
-        <option value="$PROJECT_DIR$/src/client/app/headerPrime/header.sass" />
         <option value="$PROJECT_DIR$/src/client/app/resultH/filterComponent/searchName/searchName.component.js" />
         <option value="$PROJECT_DIR$/src/client/app/resultH/filterComponent/searchStars/searchStars.component.js" />
         <option value="$PROJECT_DIR$/src/client/app/resultH/filterComponent/filterHeader/filterHeader.component.js" />
+        <option value="$PROJECT_DIR$/src/client/app/headerPrime/header.sass" />
       </list>
     </option>
   </component>
@@ -526,15 +515,15 @@
       <workItem from="1493904997516" duration="3073000" />
       <workItem from="1493910073925" duration="13000" />
       <workItem from="1493916562297" duration="23372000" />
-      <workItem from="1494248909477" duration="5901000" />
+      <workItem from="1494248909477" duration="6625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118832000" />
+    <option name="totallyTimeSpent" value="119556000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="-4" width="1313" height="772" extended-state="6" />
+    <frame x="53" y="-4" width="1313" height="772" extended-state="7" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28062016" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -912,18 +901,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/headerPrime/header.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/app/resultH/resultHoteles.component.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/app/resultH/filterComponent/filterHeader/filterHeader.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -944,10 +933,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/app/resultH/filterComponent/filterHeader/filterHeader.component.js">
+    <entry file="file://$PROJECT_DIR$/src/client/app/headerPrime/header.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="162">
+          <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
           <folding />
         </state>
       </provider>
