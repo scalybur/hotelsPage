@@ -7,7 +7,7 @@
         .component('searchPriceComponent',{
             controller: filterNightController,
             require: {
-                hotelsResultController : 'hotelsResultController'
+                hotelsResultController : '^hotelsResultComponent'
             },
             bindings:{
                 "filters" : '<'

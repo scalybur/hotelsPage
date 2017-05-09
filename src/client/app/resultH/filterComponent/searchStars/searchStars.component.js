@@ -6,7 +6,7 @@
         .component('searchStarsComponent',{
             controller: filterStarController,
             require: {
-                hotelsResultController : 'hotelsResultController'
+                hotelsResultController : '^hotelsResultComponent'
             },
             bindings:{
                 "filters" : '<'

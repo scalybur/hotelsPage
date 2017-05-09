@@ -21,13 +21,13 @@ module.exports = function () {
         build,
         index,
         src,
-        images: `${src }client/images/`,
+        images: `${src }client/img/`,
         fonts: `${scssfolder }fonts/`,
         vendorfolder: `${src }client/vendor/`,
         templateCache: {
             file: 'app.templates.js',
             options: {
-                module: 'appPrime',
+                module: 'hotelsResultModule',
                 moduleSystem: "IIFE"
             }
         },

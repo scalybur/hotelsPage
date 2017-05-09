@@ -8,7 +8,7 @@
             bindings:{},
             require:
                 {
-                hotelsResultController : 'hotelsResultController'
+                hotelsResultController : '^hotelsResultComponent'
                 },
                 controller: filterHeaderController,
                 templateUrl:'resultH/filterComponent/filterHeader/filterHeader.html'
