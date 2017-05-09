@@ -1,16 +1,16 @@
 .orderselect-ctn
     .orderselect-header
     .orderselect-ctn
-        p Ordenar
+        select
+            option(value='pricePerNight') Precio por noche por habitación
+            option(value='totalPrice') Precio completo
+        p &nbsp;
+.orderselect-ctn
+    .orderselect-header
+    .orderselect-ctn
         select
             option(value='maxStars') Más estrellas
             option(value='minStars') Menos esrellas
             option(value='maxPrice') Precios más altos
             option(value='minPrice') Precios más baratos
-
-.orderselect-ctn
-    .orderselect-header
-    .orderselect-ctn
-        select
-            option(value='pricePerNight') Precio por noche por habitación
-            option(value='totalPrice') Precio completo
+        p Ordenar
