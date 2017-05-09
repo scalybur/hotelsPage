@@ -1,6 +1,6 @@
 # hotelsPage
 Autor: Nahuel Alejandro Cabrera
-Projecto: Vista de hoteles, construccion de un projecto para Almundo.com
+Proyecto: Vista de hoteles, construcción de un proyecto para Almundo.com
 
 
 7-4-17
@@ -8,4 +8,4 @@ Projecto: Vista de hoteles, construccion de un projecto para Almundo.com
 
 #Creacion de los ficheros correspondientes
 
-#
+#README ON CONSTRUCT
