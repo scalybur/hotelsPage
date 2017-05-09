@@ -3,7 +3,7 @@
 
     angular
         .module('hotelsResultModule')
-        .factory('hotelsResultService', hotelsService);
+        .factory('hotelsService', hotelsService);
 
     hotelsService.$inject = ['$http'];
 
