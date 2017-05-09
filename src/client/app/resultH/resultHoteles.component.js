@@ -9,9 +9,9 @@
             templateUrl: "resultH/resultHoteles.html"
         });
 
-    hotelsResultController.$inject = ['hotelsResultService'];
+    hotelsResultController.$inject = ['hotelsService'];
 
-    function hotelsResultController(hotelsResultService) {
+    function hotelsResultController(hotelsService) {
         const self = this;
 
         self.filterOnHotels = [];
@@ -26,7 +26,7 @@
                 "targetName" : "",
                 "price":{
                     "priceMin" : 0,
-                    "priceMax": 5000,
+                    "priceMax": 5000
                 },
                 "stars":{
                     "all": true,
