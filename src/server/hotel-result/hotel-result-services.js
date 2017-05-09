@@ -135,6 +135,42 @@ class HotelResultService
              "pay": "payform",
              "par": "Parking"
          }
+       },
+       {
+           "idH": {
+                    "$idHH": "QRQ00"
+           },
+           "name": "Generations Hotel",
+           "descrip": "Solo la habitación",
+           "stars": "3",
+           "price": 1203,
+           "images": [
+               "https://images.almundo.com/201/1000000/30000/25000/24954/24954_678_b.jpg",
+               "https://placehold.it/350x230",
+               "https://placehold.it/350x230"
+           ],
+           "amenities": {
+               "par": "Parking"
+           }
+       },
+       {
+           "idH": {
+               "$idHH": "WEL12"
+           },
+           "name": "Yokishu Maohn",
+           "descrip": "Solo la habitación",
+           "stars": "5",
+           "price": 7777,
+           "images": [
+               "https://images.almundo.com/201/1000000/30000/25000/24954/24954_678_b.jpg",
+               "https://placehold.it/350x230",
+               "https://placehold.it/350x230"
+           ],
+           "amenities": {
+               "wifi": "wifi",
+               "tel": "telefono",
+               "par": "Parking"
+           }
        }
      ];
     }
