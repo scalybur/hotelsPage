@@ -52,7 +52,8 @@ APP(folder)->
 A_headerPrime(Header de la página)
 COMPONENTE_JADE_SAS
 
-{}{}{}{}{}{}{}
+___________________________
+___________________________
 
 B-resultH(Resultados de hoteles):
 
@@ -100,7 +101,8 @@ COMPONENTE_JADE_SASS
 COMPONENTE_MODULO_SERVICIO_JADE_SASS
 
 
-{}{}{}{}{}{}{}
+___________________________
+___________________________
 
 C_sliderComponent(Slider de imágenes, su uso radica en cada item de los resultados)
 COMPONENTE_MODULO_JADE_SASS
