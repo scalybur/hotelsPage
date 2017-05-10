@@ -92,6 +92,17 @@ gulp.task('fonts', function ()
 
 });
 
+//////////////IMG///////////////////
+
+
+gulp.task('img', function ()
+{
+    return  gulp.src('./src/client/img/**/*.{jpg,png,svg,ico}')
+        .pipe(gulp.dest(config.build + '/img'));
+
+});
+
+
 /////////////////INJECT//////////////
 
 
@@ -134,7 +145,7 @@ gulp.task('bundle', ['watch'], () =>
 });
 
 
-gulp.task('default', ['inject','build','fonts','nodemon', 'watch']);
+gulp.task('default', ['inject','build','fonts', 'img','nodemon', 'watch']);
 
 
 /////////////////////////////////////////
