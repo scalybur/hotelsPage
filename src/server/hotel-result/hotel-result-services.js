@@ -67,9 +67,10 @@ class HotelResultService
          "stars": "5",
          "price": 19000,
          "images": [
-           "https://images.almundo.com/201/1000000/10000/9300/9279/9279_69_b.jpg",
-           "https://placehold.it/350x230",
-           "https://placehold.it/350x230"
+             "https://images.almundo.com/201/1000000/30000/25100/25033/25033_147_b.jpg",
+             "https://images.almundo.com/201/1000000/30000/25100/25033/25033_146_b.jpg",
+             "https://images.almundo.com/201/1000000/30000/25100/25033/25033_166_b.jpg",
+             "https://images.almundo.com/201/1000000/30000/25100/25033/25033_172_b.jpg"
          ],
          "amenities": {
              "wifi": "wifi",
