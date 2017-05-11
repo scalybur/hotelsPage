@@ -1,1 +1,1 @@
-<ul><li ng-repeat="hotel in $ctrl.hotels | filter: filterHotel | filter: filterStar | limitTo: 10"><item-component item="hotel"></item-component></li></ul>
+<ul><li ng-repeat="hotel in $ctrl.hotels | filterHotel: $ctrl.filters.targetName | filterStar: $ctrl.filters.stars | filterNight: $ctrl.filters.price"><item-component item="hotel"></item-component></li></ul>
