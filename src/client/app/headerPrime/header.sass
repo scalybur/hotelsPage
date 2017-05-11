@@ -1,93 +1,117 @@
-.headerMain
-  width: 100%
+.nav
   display: block
-
-//////////DIV HEADER MAIN////////////
-.divHeaderMain
-  //width: 100%
-  height: auto
+  padding: 0px
   background: #002f71
   background: -moz-linear-gradient(left, #002f71 1%, #1b4985 100%)
   background: -webkit-linear-gradient(left, #002f71 1%,#1b4985 100%)
   background: linear-gradient(to right, #002f71 1%,#1b4985 100%)
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f71', endColorstr='#1b4985',GradientType=1 )
-
-.linksHeaderMain
-  text-align: right
-  margin-top: 33px
-  display: inline-flex
-
-.divHeaderMain li
-  .fa-angle-down
-    padding-left: 4px
-  padding-right: 12px
-  border-right: 1px solid
-  border-right-color: white
-  box-sizing: border-box
-  box-shadow: white
-  color: white
-  font-weight: normal
-  font-size: 14px
-  line-height: 16px
-  float: left
-  margin: 0px 8px
-  img
-    vertical-align: middle
-
-
-.divHeaderMain li a
-  text-decoration: none
-  color: #fff
-
-.divHeaderMain li a:hover
-  color: #cbc7c9
-
+  width: 100%
+  .fa-user
+    float: right
+    font-size: 20px
+    color: white
+    padding: 16px 12px
+    @media only screen and (min-width : 1200px)
+      display: none
+  .fa-phone
+    float: right
+    font-size: 20px
+    color: white
+    padding: 16px 12px
+    @media only screen and (min-width : 1200px)
+      display: none
+  .logo
+    display: inline-block
+    height: auto
+    float: left
+    margin: 16px 16px
+    max-width: 130px
+    @media only screen and (min-width : 1200px)
+      margin: 16px 0px 16px 60px
+      max-height: 48px
+      max-width: 15%
+  .dropdown-toggle
+    display: block
+    font-size: 24px
+    color: #FFFFFF
+    margin: 8px 4px
+    float: right
+    @media only screen and (min-width : 1200px)
+      display: none
+  .dropdown-menu
+    width: 100%
+    li
+      display: block
+      padding: 8px
+      background-color: #fff
+      margin: 0
+      color: #444
+      border-bottom: 1px solid #eaeaea
+      line-height: 22px
+      font-size: 14px
+      font-weight: normal
+      transition: 0.2s ease-in-out
+  .rightnavdesktop
+    display: none
+    @media only screen and (min-width : 1200px)
+      display: inline-block
+      width: 60%
+      float: right
+      text-align: right
+      margin-top: 20px
+      margin-right: 60px
+      ul
+        padding: 8px 12px
+        display: inline-flex
+        li
+          .fa-angle-down
+            padding-left: 4px
+          padding-right: 12px
+          border-right: 1px solid
+          border-right-color: white
+          box-sizing: border-box
+          box-shadow: white
+          color: white
+          font-weight: normal
+          font-size: 14px
+          line-height: 16px
+          float: left
+          margin: 0px 8px
+          a
+            text-decoration: none
+            color: #fff
+          img
+            vertical-align: middle
 .helpTag
-  font-weight: bold
-  color: #f4811a !important
-
-.logoAlmundo
-  display: inline-block
-  margin: 16px 0px 16px 32px
-  height: auto
-  float: left
-.clubAlMundoHeader
-  line-height: -10px
-
-/////////NAVIGATOR-MENU/////////
-
-.divNavigatorMenu
-  color: #ffffff
-  background: #013971
-  background: -moz-linear-gradient(left, #013971 0%, #406992 100%)
-  background: -webkit-linear-gradient(left, #013971 0%,#406992 100%)
-  background: linear-gradient(to right, #013971 0%,#406992 100%)
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013971', endColorstr='#406992',GradientType=1 )
-  font-size: 24px
-  border: solid 1px
-  border-color: #354c77
-  line-height: 32px
-
-.divNavigatorMenu ul
-  margin: 0
-  padding: 0
-  list-style-type: none
-  text-align: center
-  font-size: medium
-  font-weight: bold
-
-.divNavigatorMenu ul li
-  margin: 0
-  padding: 0
-  display: inline
-
-.divNavigatorMenu ul li a
-  margin: 0
-  padding: .2em 1em
-  text-decoration: none
-  color: #fff
-  transition: background-color 1s ease
-
-.divNavigatorMenu ul li a:hover
-  background-color: #013971
+  color: rgb(245, 109, 0) !important
+  font-weight: bold !important
+.navigationdesktop
+  display: none
+  @media only screen and (min-width : 1200px)
+    display: block
+    width: 100%
+    background: #013971
+    background: -moz-linear-gradient(left, #013971 0%, #406992 100%)
+    background: -webkit-linear-gradient(left, #013971 0%,#406992 100%)
+    background: linear-gradient(to right, #013971 0%,#406992 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013971', endColorstr='#406992',GradientType=1 )
+    text-align: center
+    ul
+      padding: 0px
+      display: inline-flex
+      li
+        color: white
+        font-family: Roboto, sans-serif
+        padding: 8px
+        margin: 0px 8px
+        font-size: 16px
+        line-height: 18px
+        transition: background-color 1s ease
+        &:hover
+          background-color: #224b86
+        a
+          text-decoration: none
+          color: #fff
+          font-weight: bold
 

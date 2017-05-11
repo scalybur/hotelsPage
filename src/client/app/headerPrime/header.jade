@@ -1,42 +1,70 @@
-header.headerMain
-    div.divHeaderMain.row
-        div.containLogoAlmundo.col-lg-6
-            img.logoAlmundo(src="./build/img/logo-almundo.svg")
+.nav
+    .logo
+        img.logoAlmundo(src="./build/img/logo-almundo.svg")
+    .dropdown
+    button.dropdown-toggle(type='button', data-toggle='dropdown')
+        | <i class="fa fa-bars" aria-hidden="true"></i>
+        span.dropdown-toggle(type='button', data-toggle='dropdown')
+    ul.dropdown-menu
+        li
+            a(href='#') Hoteles
+        li
+            a(href='#') Vuelos
+        li
+            a(href='#') Vuelo + Hotel
+        li
+            a(href='#') Paquetes
+        li
+            a(href='#') Disney
+        li
+            a(href='#') Escapadas
+        li
+            a(href='#') Seguros
+        li
+            a(href='#') Autos
+        li
+            a(href='#') Cruceros
+        li
+            a(href='#') Ofertas
+        li
+            a(href='#') Más<i class="fa fa-angle-down" aria-hidden="true"></i>
+    i.fa.fa-phone(aria-hidden='true')
+    i.fa.fa-user(aria-hidden='true')
 
-        ul.linksHeaderMain.col-lg-6
+    .rightnavdesktop
+        ul
             li
                 a(href='#') Ingresar
             li.clubAlMundoHeader
                 a(href='#')
-                    img(src="./build/img/logo-clubalmundo.svg")
+                    img(src="./build/img/logo-clubalmundo.svg" class="img-responsive")
             li
                 a(href='#') Sucursales
             li
-                a(href='#') Llámanos
+                a(href='#') Llámanos<i class="fa fa-angle-down" aria-hidden="true"></i>
             li
                 a.helpTag(href='#') AYUDA
-
-    div.divNavigatorMenu.row
-        ul.linksNavigatorMenu
-            li
-                a(href='#') Hoteles
-            li
-                a(href='#') Vuelos
-            li
-                a(href='#') Vuelo + Hotel
-            li
-                a(href='#') Paquetes
-            li
-                a(href='#') Disney
-            li
-                a(href='#') Escapadas
-            li
-                a(href='#') Seguros
-            li
-                a(href='#') Autos
-            li
-                a(href='#') Cruceros
-            li
-                a(href='#') Ofertas
-            li
-                a(href='#') Más
+.navigationdesktop
+    ul
+        li
+            a(href='#') Hoteles
+        li
+            a(href='#') Vuelos
+        li
+            a(href='#') Vuelo + Hotel
+        li
+            a(href='#') Paquetes
+        li
+            a(href='#') Disney
+        li
+            a(href='#') Escapadas
+        li
+            a(href='#') Seguros
+        li
+            a(href='#') Autos
+        li
+            a(href='#') Cruceros
+        li
+            a(href='#') Ofertas
+        li
+            a(href='#') Más<i class="fa fa-angle-down" aria-hidden="true"></i>
