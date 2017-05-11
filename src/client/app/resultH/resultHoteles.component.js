@@ -17,9 +17,12 @@
         self.filterOnHotels = [];
 
         this.$onInit = function () {
+            self.loading = true;
             hotelsService.getHotels().then(function (hotels) {
                 self.hotels = hotels;
                 self.filterOnHotels = hotels;
+            }).then(function(){
+                //self.loading = false;
             });
             this.filters = {
                 "name" : "",
