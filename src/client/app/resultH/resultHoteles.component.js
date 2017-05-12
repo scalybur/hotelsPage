@@ -15,14 +15,15 @@
         const self = this;
 
         self.filterOnHotels = [];
+        self.loading = true;
+        this.$onInit = function ()
+        {
 
-        this.$onInit = function () {
-            self.loading = true;
-            hotelsService.getHotels().then(function (hotels) {
+            hotelsService.getHotels().then(function (hotels)
+            {
                 self.hotels = hotels;
                 self.filterOnHotels = hotels;
-            }).then(function(){
-                //self.loading = false;
+                self.loading = false;
             });
             this.filters = {
                 "name" : "",

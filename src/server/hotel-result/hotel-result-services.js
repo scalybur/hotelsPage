@@ -5,7 +5,7 @@ class HotelResultService
          "idH": {
            "$idHH": "AKA34"
          },
-         "name": "Kelvin Palace",
+         "name": "Hotel Apollo Opera",
          "descrip": "Solo la habitación",
          "stars": "4",
          "price": 11000,
@@ -25,7 +25,7 @@ class HotelResultService
            "idH": {
                "$idHH": "TYW32"
            },
-           "name": "Disney Magic Island",
+           "name": "Disney Magic French",
            "descrip": "Solo la habitación",
            "stars": "5",
            "price": 19000,
@@ -47,7 +47,7 @@ class HotelResultService
          "idH": {
            "$idHH": "KLK09"
          },
-         "name": "Pensilvania Resort & Casino",
+         "name": "Hotel Eiffel Seine",
          "descrip": "Solo la habitación",
          "stars": "4",
          "price": 8600,
@@ -66,7 +66,7 @@ class HotelResultService
          "idH": {
            "$idHH": "UJH31"
          },
-         "name": "House of Love",
+         "name": "Residhome Appart Hotel Paris-Opéra",
          "descrip": "Solo la habitación",
          "stars": "2",
          "price": 4700,
@@ -84,7 +84,7 @@ class HotelResultService
          "idH": {
            "$idHH": "MNB23"
          },
-         "name": "Trebol Resort",
+         "name": "Hotel Claude Bernard Saint Germain",
          "descrip": "Solo la habitación",
          "stars": "2",
          "price": 6100,
@@ -102,7 +102,7 @@ class HotelResultService
          "idH": {
            "$idHH": "ASD23"
          },
-         "name": "Magnity Mountain",
+         "name": "Le Marceau Bastille",
          "descrip": "Solo la habitación",
          "stars": "3",
          "price": 3699,
@@ -121,7 +121,7 @@ class HotelResultService
          "idH": {
            "$idHH": "POK31"
          },
-         "name": "Empire New Jersey",
+         "name": "Citadines Apart'hotel Saint-Germain-des-Prés Paris",
          "descrip": "Solo la habitación",
          "stars": "4",
          "price": 5050,
@@ -141,7 +141,7 @@ class HotelResultService
            "idH": {
                     "$idHH": "QRQ00"
            },
-           "name": "Generations Hotel",
+           "name": "Pullman Paris Montparnasse",
            "descrip": "Solo la habitación",
            "stars": "3",
            "price": 1203,
@@ -158,7 +158,7 @@ class HotelResultService
            "idH": {
                "$idHH": "WEL12"
            },
-           "name": "Yokishu Maohn",
+           "name": "Novotel Paris Centre Tour Eiffel",
            "descrip": "Solo la habitación",
            "stars": "5",
            "price": 7777,

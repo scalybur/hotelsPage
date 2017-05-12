@@ -13,5 +13,5 @@
             maps-component
             filter-component(filters="$ctrl.filters")
         div.hotels-ctn(hotels-result-component).col-xs-12.col-sm-12.col-md-12.col-lg-9
-            spinner-component(ng-show="$ctrl.loading")
+            spinner-component(ng-if="$ctrl.loading")
             result-container-items-component(hotels = "$ctrl.getHotels()" filters='$ctrl.filters')

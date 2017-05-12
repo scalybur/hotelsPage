@@ -4,7 +4,7 @@
 (function ()
 {
     'use strict';
-    angular.module('hotelsResultModule')
+    angular.module('spinnerModule')
         .component('spinnerComponent',{
             templateUrl: "spinnerCharge/spinner.html"
         });
