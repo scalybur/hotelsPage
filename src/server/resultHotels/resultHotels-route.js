@@ -1,5 +1,5 @@
 const router = require('co-router')();
-const controller = require('./hotel-result-controller');
+const controller = require('./resultHotels-controller');
 
 router.get('/', controller.getHotels);
 

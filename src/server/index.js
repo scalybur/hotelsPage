@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 ///API_ROUTE///
-const hotelsApi = require('./hotel-result/hotel-result-route');
+const hotelsApi = require('./resultHotels/resultHotels-route');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
