@@ -1,38 +1,47 @@
-(function (){
+(function ()
+{
 
     'use strict';
 
     angular
         .module('filterModule')
-        .component('searchPriceComponent',{
+        .component('searchPriceComponent',
+            {
             controller: filterNightController,
-            require: {
+            require:
+                {
                 hotelsResultController : '^hotelsResultComponent'
-            },
-            bindings:{
+                },
+            bindings:
+                {
                 "filters" : '<'
-            },
+                },
             templateUrl: "resultH/filterComponent/searchPrice/searchPrice.html"
-        }).filter('filterNight',function () {
-        return function (hotels,price) {
-            return hotels.filter(function (hotel) {
+            }).filter('filterNight',function ()
+    {
+        return function (hotels,price)
+        {
+            return hotels.filter(function (hotel)
+            {
                 return (hotel.price >= price.priceMin && hotel.price <= price.priceMax);
             });
         }
     });
 
-    function filterNightController (){
+    function filterNightController ()
+    {
         let self = this;
 
-        this.slider = {
+        this.slider =
+            {
             value: 150,
-            options: {
+            options:
+                {
                 minRange: 200,
                 noSwitching: true,
                 pushRange: true,
                 onChange : this.filterNight
-            }
-        };
-
+                }
+            };
     }
 })();

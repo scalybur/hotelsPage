@@ -5,8 +5,9 @@
     'use strict';
     angular
         .module('hotelsResultModule')
-        .component('mapsComponent', {
+        .component('mapsComponent',
+            {
             bindings:{},
             templateUrl: "resultH/mapsComponent/map.html"
-        });
+            });
 })();

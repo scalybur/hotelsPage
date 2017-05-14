@@ -1,15 +1,18 @@
-(function () {
+(function ()
+{
     'use strict';
 
     angular
         .module('filterModule')
-        .component('filterComponent', {
+        .component('filterComponent',
+            {
             controller : filtersController,
-            bindings: {
+            bindings:
+                {
                 "filters" :'<',
-            },
+                },
             templateUrl: 'resultH/filterComponent/filterComponent.html'
-        });
+            });
 
     function filtersController (){}
 })();

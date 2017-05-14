@@ -1,56 +1,73 @@
-(function (){
+(function ()
+{
     'use strict';
 
     angular
         .module('filterModule')
-        .component('searchStarsComponent',{
+        .component('searchStarsComponent',
+            {
             controller: filterStarController,
-            require: {
+            require:
+                {
                 hotelsResultController : '^hotelsResultComponent'
-            },
-            bindings:{
+                },
+            bindings:
+                {
                 "filters" : '<'
-            },
+                },
             templateUrl: "resultH/filterComponent/searchStars/searchStars.html"
-        }).filter('filterStar', function (){
-        return function (hotels, stars) {
-            return hotels.filter(function (hotel) {
+            }).filter('filterStar', function ()
+    {
+        return function (hotels, stars)
+        {
+            return hotels.filter(function (hotel)
+            {
                 Math.ceil(hotel.stars);
-                if(stars.all){
+                if(stars.all)
+                {
                     return hotel;
                 }
-                else if(stars.five && hotel.stars == 5){
+                else if(stars.five && hotel.stars == 5)
+                {
                     return hotel;
                 }
-                else if(stars.four && hotel.stars == 4){
+                else if(stars.four && hotel.stars == 4)
+                {
                     return hotel;
                 }
-                else if(stars.three && hotel.stars == 3){
+                else if(stars.three && hotel.stars == 3)
+                {
                     return hotel;
                 }
-                else if(stars.two && hotel.stars == 2){
+                else if(stars.two && hotel.stars == 2)
+                {
                     return hotel;
                 }
-                else if(stars.one && hotel.stars == 1){
+                else if(stars.one && hotel.stars == 1)
+                {
                     return hotel;
                 }
             });
         }
     });
 
-    function filterStarController (){
+    function filterStarController ()
+    {
 
         let self = this;
 
-        this.allStars = function (){
+        this.allStars = function ()
+        {
             this.hotelsResultController.filterOnHotels = this.hotelsResultController.hotels;
         };
 
-        this.singleCheckbox = function () {
+        this.singleCheckbox = function ()
+        {
             self.filters.stars.all = false;
         };
 
-        this.allStarsCheckbox = function (){
+        this.allStarsCheckbox = function ()
+        {
             self.filters.stars.five = false;
             self.filters.stars.four = false;
             self.filters.stars.three = false;

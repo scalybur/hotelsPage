@@ -1,21 +1,25 @@
 /**
  * Created by Nahuel on 21/4/2017.
  */
-(function (){
+(function ()
+{
 
     'use strict';
 
     angular
         .module('hotelsResultModule')
-        .component('resultContainerItemsComponent', {
+        .component('resultContainerItemsComponent',
+            {
             controller: itemListController,
-            bindings: {
+            bindings:
+                {
                 hotels: '<',
                 filters: '<'
-            },
+                },
             templateUrl: "resultH/resultContainerItems/itemList.html"
-        });
-        function itemListController (){
+            });
+        function itemListController ()
+        {
             let self = this;
             let slicehotel = [];
             this.loadMore = function () {}

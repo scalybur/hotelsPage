@@ -4,8 +4,9 @@
 (function ()
 {
     'use strict';
-    angular.module('spinnerModule')
-        .component('spinnerComponent',{
+    angular.module('hotelsResultModule')
+        .component('spinnerComponent',
+            {
             templateUrl: "spinnerCharge/spinner.html"
-        });
+            });
 })();

@@ -1,10 +1,12 @@
-(function (){
+(function ()
+{
 
     'use strict';
 
     angular
         .module('hotelsResultModule')
-        .component('headerComponent',{
+        .component('headerComponent',
+            {
             templateUrl: "headerPrime/header.html"
-        });
+            });
 })();
