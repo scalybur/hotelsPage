@@ -10,9 +10,14 @@
             h2 {{$ctrl.item.name}}
         a.starsDetails(ng-repeat = ("star in $ctrl.stars() track by $index")) <i class="fa fa-star" aria-hidden="true"></i>
         h3 <i class="fa fa-bed" aria-hidden="true"></i> {{$ctrl.item.descrip}}
-        ul
+        ul.amenitiesShow
             li(ng-repeat="(key, value) in $ctrl.item.amenities" ng-class="$ctrl.getIcon(key)")
-                //- p.amt-payment-methods
+        .deta
+            ul.tripsDetails(ng-show="$ctrl.item.price > 5000 && $ctrl.item.price < 10000")
+                li
+                    img(width="80" src="//static.almundo.com/img/logos/tripadvisor/4.0.svg" data-ng-src="//static.almundo.com/img/logos/tripadvisor/4.0.svg" alt="trip")
+                li
+                    p.countTrips 405 opiniones
     .pricebox
         p Precio por noche por habitación
         .price <span class="number">{{$ctrl.item.price | currency:"ARS":0}}</span>
