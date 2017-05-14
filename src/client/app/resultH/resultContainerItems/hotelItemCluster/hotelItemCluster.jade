@@ -1,7 +1,9 @@
 .cluster
     .sliderdiv
-        div.saleMessage
+        div.saleMessage(ng-show="$ctrl.item.price > 3000")
             p.recomendado ¡Hotel Recomendado!
+        div.offerMessage(ng-show="$ctrl.item.price < 2000")
+            p.oferta 30% OFF
         slider-component(items="$ctrl.item.images")
     .details
         a.nameHotelDetails(href="#")

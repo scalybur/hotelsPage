@@ -28,12 +28,26 @@
       width: 100%
       margin: 0
       background-color: $backgroundRecommend
+      transition: all 1s ease
       .recomendado
         margin: 2px 0px 2px 0px
         color: #fff
         text-align: center
         font-size: 14px
         font-weight: bold
+    .offerMessage
+      position: absolute
+      z-index: 1
+      width: 100%
+      margin: 0
+      background-color: #36b92f
+      .oferta
+        margin: 2px 0px 2px 0px
+        color: #fff
+        text-align: center
+        font-size: 16px
+        font-weight: bold
+
   .details
     float: left
     width: 100%
@@ -121,7 +135,7 @@
 
     .price
       color: $amOrange
-      margin: -12px
+      margin: 0px 0px -15px 0px
       .number
         font-weight: bold
         font-size: 36px
@@ -141,6 +155,7 @@
       font-size: 22px
       font-weight: bold
       width: 270px
+      transition: background 1s ease
       @media only screen and (min-width : 768px)
         width: 190px
       &:hover
