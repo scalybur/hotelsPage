@@ -34,7 +34,8 @@
                 water: "class amt-waterparkaccess",
                 bar: "class amt-bar",
                 laundry: "amt-laundry-facilities",
-                fit: "class amt-fitness-center"
+                fit: "class amt-fitness-center",
+                tv: "class amt-television"
             }
             return icons[key];
         }

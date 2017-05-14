@@ -1,11 +1,9 @@
 .nav
   display: block
   padding: 0px
-  background: #002f71
-  background: -moz-linear-gradient(left, #002f71 1%, #1b4985 100%)
-  background: -webkit-linear-gradient(left, #002f71 1%,#1b4985 100%)
-  background: linear-gradient(to right, #002f71 1%,#1b4985 100%)
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f71', endColorstr='#1b4985',GradientType=1 )
+  color: #fff
+  background-image: url("./img/header-bg.jpg")
+  background-size: cover
   width: 100%
   .fa-user
     float: right
@@ -27,10 +25,14 @@
     float: left
     margin: 16px 16px
     max-width: 130px
+    .logoAlmundo
+      max-height: 40px
     @media only screen and (min-width : 1200px)
       margin: 16px 0px 16px 60px
-      max-height: 48px
+      max-height: 42px
       max-width: 15%
+      .logoAlmundo
+        max-height: 40px
   .dropdown-toggle
     display: block
     font-size: 24px
@@ -46,7 +48,7 @@
       padding: 8px
       background-color: #fff
       margin: 0
-      color: #444
+      color: $amGray
       border-bottom: 1px solid #eaeaea
       line-height: 22px
       font-size: 14px
@@ -62,7 +64,7 @@
       margin-top: 20px
       margin-right: 60px
       ul
-        padding: 8px 12px
+        padding: 10px 1px
         display: inline-flex
         li
           .fa-angle-down
@@ -74,15 +76,17 @@
           box-shadow: white
           color: white
           font-weight: normal
-          font-size: 14px
+          font-size: 12px
           line-height: 16px
           float: left
           margin: 0px 8px
+          &:last-child
+            border: none
           a
             text-decoration: none
             color: #fff
-          img
-            vertical-align: middle
+            &:hover
+              color: $linkHeaderHover
 .helpTag
   color: rgb(245, 109, 0) !important
   font-weight: bold !important
@@ -91,11 +95,7 @@
   @media only screen and (min-width : 1200px)
     display: block
     width: 100%
-    background: #013971
-    background: -moz-linear-gradient(left, #013971 0%, #406992 100%)
-    background: -webkit-linear-gradient(left, #013971 0%,#406992 100%)
-    background: linear-gradient(to right, #013971 0%,#406992 100%)
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013971', endColorstr='#406992',GradientType=1 )
+    background: rgba(0, 44, 119, 0.29)
     text-align: center
     ul
       padding: 0px
@@ -105,11 +105,11 @@
         font-family: Roboto, sans-serif
         padding: 8px
         margin: 0px 8px
-        font-size: 16px
+        font-size: 14px
         line-height: 18px
         transition: background-color 1s ease
         &:hover
-          background-color: #224b86
+          background-color: $linkNavBackHover
         a
           text-decoration: none
           color: #fff

@@ -16,6 +16,7 @@ class HotelResultService
          ],
          "amenities": {
              "wifi": "wifi",
+             "pets": "pets",
              "pay": "payform",
              "par": "Parking",
              "bar" :"bares"
@@ -59,6 +60,7 @@ class HotelResultService
          "amenities": {
            "wifi": "wifi",
            "tel": "telefono",
+           "tv": "tv",
            "bar": "bares"
          }
        },
