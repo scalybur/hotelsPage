@@ -2,19 +2,19 @@
     .sliderdiv
         slider-component(items="$ctrl.item.images")
     .details
-        h2 {{$ctrl.item.name}}
-        a(ng-repeat = ("star in $ctrl.stars() track by $index")) <i class="fa fa-star" aria-hidden="true"></i>
+        a.nameHotelDetails(href="#")
+            h2 {{$ctrl.item.name}}
+        a.starsDetails(ng-repeat = ("star in $ctrl.stars() track by $index")) <i class="fa fa-star" aria-hidden="true"></i>
         h3 <i class="fa fa-bed" aria-hidden="true"></i> {{$ctrl.item.descrip}}
         ul
             li(ng-repeat="(key, value) in $ctrl.item.amenities" ng-class="$ctrl.getIcon(key)")
                 //- p.amt-payment-methods
     .pricebox
-        p Precio por noche por <br/>habitación <br/>
+        p Precio por noche por habitación
         .price <span class="number">{{$ctrl.item.price | currency:"ARS":0}}</span>
         <br/>
         p Impuestos y tasas no incluidos
         a(href='#' target="new_blank")
             button Ver hotel
-        p Pagá en coutas
-        a(href='#' target="new_blank") Pagá en destino
+        p.payMethod Pagá en coutas o en destino.
 
