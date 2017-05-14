@@ -35,7 +35,8 @@
                 bar: "class amt-bar",
                 laundry: "amt-laundry-facilities",
                 fit: "class amt-fitness-center",
-                tv: "class amt-television"
+                tv: "class amt-television",
+                gift: "class amt-gift"
             }
             return icons[key];
         }

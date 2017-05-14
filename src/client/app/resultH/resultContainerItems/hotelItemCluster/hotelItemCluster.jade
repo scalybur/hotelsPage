@@ -13,11 +13,11 @@
         ul.amenitiesShow
             li(ng-repeat="(key, value) in $ctrl.item.amenities" ng-class="$ctrl.getIcon(key)")
         .deta
-            ul.tripsDetails(ng-show="$ctrl.item.price > 5000 && $ctrl.item.price < 10000")
+            ul.tripsDetails(ng-show="$ctrl.item.price > 5000")
                 li
                     img(width="80" src="//static.almundo.com/img/logos/tripadvisor/4.0.svg" data-ng-src="//static.almundo.com/img/logos/tripadvisor/4.0.svg" alt="trip")
                 li
-                    p.countTrips 405 opiniones
+                    p.countTrips {{$ctrl.item.trips}} opiniones
     .pricebox
         p Precio por noche por habitación
         .price <span class="number">{{$ctrl.item.price | currency:"ARS":0}}</span>

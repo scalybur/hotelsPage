@@ -9,6 +9,7 @@ class HotelResultService
             "descrip": "Solo la habitación",
             "stars": "5",
             "price": 14328,
+            "trips": 412,
             "images": [
                 "https://images.almundo.com/201/9000000/8300000/8290900/8290864/8290864_25_b.jpg",
                 "https://images.almundo.com/201/9000000/8300000/8290900/8290864/8290864_51_b.jpg",
@@ -20,7 +21,8 @@ class HotelResultService
                 "pets": "pets",
                 "pay": "payform",
                 "par": "Parking",
-                "bar" :"bares"
+                "bar" :"bares",
+                "laundry":"Laundry"
             }
         },
         {
@@ -42,21 +44,23 @@ class HotelResultService
              "pets": "pets",
              "pay": "payform",
              "par": "Parking",
-             "bar" :"bares"
+             "bar" :"bares",
+             "resto": "Resto"
          }
        },
        {
            "idH": {
                "$idHH": "TYW32"
            },
-           "name": "Disney Magic French",
+           "name": "Radisson Blu Hotel at Disneyland® Paris",
            "descrip": "Solo la habitación",
            "stars": "5",
-           "price": 5876,
+           "price": 16876,
+           "trips": 1574,
            "images": [
-               "https://images.almundo.com/201/1000000/30000/25100/25033/25033_147_b.jpg",
-               "https://images.almundo.com/201/1000000/30000/25100/25033/25033_146_b.jpg",
-               "https://images.almundo.com/201/1000000/30000/25100/25033/25033_166_b.jpg",
+               "https://r-ec.bstatic.com/images/hotel/max1024x768/558/55863514.jpg",
+               "https://r-ec.bstatic.com/data/xphoto/max1024x768/635/6352262.jpg",
+               "https://q-ec.bstatic.com/images/hotel/max1024x768/287/28770781.jpg",
                "https://images.almundo.com/201/1000000/30000/25100/25033/25033_172_b.jpg"
            ],
            "amenities": {
@@ -64,7 +68,9 @@ class HotelResultService
                "pay": "payform",
                "par": "Parking",
                "tel": "telefono",
-               "sp": "Spa"
+               "sp": "Spa",
+               "resto":"Resto",
+               "water": "WaterParkAcces"
            }
        },
        {
@@ -75,6 +81,7 @@ class HotelResultService
          "descrip": "Solo la habitación",
          "stars": "3",
          "price": 12911,
+         "trips": 112,
          "images": [
            "https://images.almundo.com/201/1000000/570000/562100/562024/562024_90_b.jpg",
            "https://images.almundo.com/201/1000000/570000/562100/562024/562024_84_b.jpg",
@@ -85,7 +92,8 @@ class HotelResultService
            "wifi": "wifi",
            "tel": "telefono",
            "tv": "tv",
-           "bar": "bares"
+           "bar": "bares",
+           "pool": "Pool"
          }
        },
        {
@@ -103,7 +111,8 @@ class HotelResultService
          ],
          "amenities": {
            "wifi": "wifi",
-           "tel": "telefono"
+           "tel": "telefono",
+           "resto":"Resto"
          }
        },
        {
@@ -122,7 +131,8 @@ class HotelResultService
          ],
          "amenities": {
            "tel": "telefono",
-           "pay": "payform"
+           "pay": "payform",
+           "tv":"Tv"
          }
        },
        {
@@ -141,6 +151,8 @@ class HotelResultService
          ],
          "amenities": {
            "wifi": "wifi",
+           "tv":"Tv",
+           "children":"Child",
            "tel": "telefono",
            "sp": "Spa"
          }
@@ -162,6 +174,7 @@ class HotelResultService
          "amenities": {
              "wifi": "wifi",
              "tel": "telefono",
+             "fit":"Fitness",
              "pay": "payform",
              "par": "Parking"
          }
@@ -174,6 +187,7 @@ class HotelResultService
            "descrip": "Solo la habitación",
            "stars": "4",
            "price": 7511,
+           "trips": 66,
            "images": [
                "https://images.almundo.com/201/1000000/20000/17800/17725/7c4c315a_b.jpg",
                "https://images.almundo.com/201/1000000/20000/17800/17725/06aedb98_b.jpg",
@@ -182,6 +196,7 @@ class HotelResultService
            ],
            "amenities": {
                "par": "Parking",
+               "laundry":"Laundry",
                "wifi": "wifi",
                "tv": "tv"
            }
@@ -202,7 +217,9 @@ class HotelResultService
            ],
            "amenities": {
                "wifi": "wifi",
+               "water":"Water",
                "tel": "telefono",
+               "condition":"Air",
                "par": "Parking"
            }
        },
@@ -221,7 +238,7 @@ class HotelResultService
                "https://images.almundo.com/201/16000000/15340000/15333600/15333594/d5ce6c9a_b.jpg"
            ],
            "amenities": {
-               "wifi": "wifi",
+               "cof":"CoffeStore",
                "tel": "telefono",
                "par": "Parking"
            }
@@ -242,8 +259,9 @@ class HotelResultService
            ],
            "amenities": {
                "wifi": "wifi",
+               "pool": "Pool",
                "tel": "telefono",
-               "par": "Parking"
+               "pets":"Pets"
            }
        }
      ];
