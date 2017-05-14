@@ -5,11 +5,20 @@
     angular.module('filterModule')
         .component('headerSearchComponent',
             {
-            bindings:{},
+            bindings:{
+                "filters":'<'
+            },
+                require:
+                    {
+                        hotelsResultController : "^hotelsResultComponent"
+                    },
                 controller: filterHeaderController,
                 templateUrl:'resultH/filterComponent/filterHeader/filterHeader.html'
             });
 
-    function filterHeaderController() {}
+    function filterHeaderController() {
+        var self = this;
+        this.$onInit = function () {}
+    }
 
 })();

@@ -23,7 +23,6 @@
                 if (this.currentIndex === this.items.length - 1)
                     return this.currentIndex = 0;
                 this.currentIndex++;
-                console.log(this.currentIndex);
             }
     }
 })();

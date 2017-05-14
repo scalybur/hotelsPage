@@ -30,7 +30,7 @@
                 "targetName" : "",
                 "price":{
                     "priceMin" : 0,
-                    "priceMax": 20000,
+                    "priceMax": 17352,
                 },
                 "stars":{
                     "all": true,
