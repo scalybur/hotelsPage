@@ -13,9 +13,10 @@
         font-family: Roboto, sans-serif
         font-weight: bold
         line-height: 16px
-        color: #0032b2
+        color: $amLinkBlue
+        transition: color 1s ease
         &:hover
-          color: #0e4af0
+          color: $amLinkHoverBlue
         .fa-usd
           margin-right: 12px
         .fa-sort-asc
@@ -29,16 +30,20 @@
         .rz-limit
           display: none
         .rz-bar
-          background: #aaa
-          height: 8px
+          background: $amColor
+          height: 6px
         .rz-pointer
+          text-decoration: none
           width: 16px
           height: 32px
           top: auto
           bottom: -16px
-          background-color: white
-          border: 1px solid #333
+          background-color: #FFFFFF
+          border: 1px solid $amDarkGray
           border-radius: 10px
+        .rz-pointer-min
+          font-size: 19px
+        .rz-pointer-max
         .rz-pointer-min::after
           display: none
         .rz-pointer-max::after

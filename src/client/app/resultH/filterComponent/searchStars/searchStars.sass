@@ -4,7 +4,7 @@
     list-style-type: none
   .filter-ctn
     box-shadow: 0px 1px 3px 0px rgba(119, 119, 119, 0.3)
-    background-color: white
+    background-color: #ffffff
     margin-bottom: 6px
     .filterheader
       h5
@@ -13,9 +13,10 @@
         font-family: Roboto, sans-serif
         font-weight: bold
         line-height: 16px
-        color: #0032b2
+        color: $amLinkBlue
+        transition: color 1s ease
         &:hover
-          color: #0e4af0
+          color: $amLinkHoverBlue
       .fa-star
         margin-right: 8px
       .fa-sort-asc
@@ -26,4 +27,4 @@
       padding: 0px 16px 8px 16px
       .fa-star
         margin: 8px 4px
-        color:  #FDBA12
+        color:  $amStars
