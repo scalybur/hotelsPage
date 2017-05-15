@@ -12,7 +12,7 @@
         font-weight: normal
         @media only screen and (min-width : 1024px)
           padding: 0px 10px
-          font-size: 20px
+          font-size: 16px
     .content
       display: block
       padding: 0px 10px
@@ -24,7 +24,21 @@
           font-size: 12px
           padding: 0px 10px
       a
-        color: $amLinkBlue
-        transition: color 1s ease
-        &:hover
-          color: $amLinkHoverBlue
+        margin-right: 111px
+        .solicitud
+          position: relative;
+          margin-top: -19px;
+          right: -616%;
+          color: #ffffff
+          background-color: $amOrange
+          box-shadow: 0 -2px 0 #cc6600 inset
+          border-radius: 5px
+          border: none
+          font-weight: bold
+          transition: background 1s ease
+          width: 120%
+          height: 14%
+          &:hover
+            background: $amColor
+            text-shadow: 0 1px 7px $amStars
+
