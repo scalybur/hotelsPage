@@ -4,4 +4,6 @@
             h5 <i class="fa fa-usd" aria-hidden="true"></i>Precio por noche <i class="fa fa-sort-asc" aria-hidden="true"></i>
         .filtercontainer(ng-show="!hideNightFilter")
             <rzslider class="angularjsslider"  rz-slider-model="$ctrl.filters.price.priceMin" rz-slider-high="$ctrl.filters.price.priceMax" rz-slider-options="$ctrl.slider.options"></rzslider>
-
+        div.containOutputs
+            p.leftOut {{$ctrl.filters.price.priceMin | currency:"$":0}}
+            p.rightOut {{$ctrl.filters.price.priceMax | currency:"$":0}}

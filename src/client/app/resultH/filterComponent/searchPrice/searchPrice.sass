@@ -27,11 +27,12 @@
       padding: 0px 16px 8px 16px
       .angularjsslider
       .rzslider
+        margin-top: 8px
         .rz-limit
           display: none
         .rz-bar
           background: $amColor
-          height: 6px
+          height: 5px
         .rz-pointer
           text-decoration: none
           width: 16px
@@ -42,9 +43,26 @@
           border: 1px solid $amDarkGray
           border-radius: 10px
         .rz-pointer-min
-          font-size: 19px
         .rz-pointer-max
         .rz-pointer-min::after
           display: none
         .rz-pointer-max::after
           display: none
+    .containOutputs
+      display: flex
+      justify-content: space-between
+      p
+        color: $amDarkGray
+        width: 100%
+        font-weight: bold
+        flex: 1 1 auto
+        display: inline-block
+        margin: 2px 10px 6px 8px
+      .rightOut
+        text-align: right
+      .leftOut
+        text-align: left
+.rzslider .rz-bubble
+  padding: 1px 3px
+  cursor: default
+  display: none

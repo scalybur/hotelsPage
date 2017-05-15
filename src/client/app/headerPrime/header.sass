@@ -1,21 +1,21 @@
 .nav
   display: block
   padding: 0px
-  color: #fff
+  color: #FFFFFF
   background-image: url("./img/header-bg.jpg")
   background-size: cover
   width: 100%
   .fa-user
     float: right
     font-size: 20px
-    color: white
+    color: $amBlueButton
     padding: 16px 12px
     @media only screen and (min-width : 1200px)
       display: none
   .fa-phone
     float: right
     font-size: 20px
-    color: white
+    color: $amBlueButton
     padding: 16px 12px
     @media only screen and (min-width : 1200px)
       display: none
@@ -36,7 +36,9 @@
   .dropdown-toggle
     display: block
     font-size: 24px
-    color: #FFFFFF
+    color: $amBlueButton
+    background: $amBlue
+    border-color: $amBlue
     margin: 8px 4px
     float: right
     @media only screen and (min-width : 1200px)
@@ -84,7 +86,7 @@
             border: none
           a
             text-decoration: none
-            color: #fff
+            color: #FFFFFF
             &:hover
               color: $linkHeaderHover
 .helpTag
