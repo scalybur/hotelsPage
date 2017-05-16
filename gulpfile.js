@@ -92,7 +92,7 @@ gulp.task('fonts', function ()
 
 });
 
-//////////////IMG///////////////////
+//////////////IMG///////////
 
 
 gulp.task('img', function ()

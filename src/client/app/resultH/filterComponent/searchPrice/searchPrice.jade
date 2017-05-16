@@ -5,5 +5,5 @@
         .filtercontainer(ng-show="!hideNightFilter")
             <rzslider class="angularjsslider"  rz-slider-model="$ctrl.filters.price.priceMin" rz-slider-high="$ctrl.filters.price.priceMax" rz-slider-options="$ctrl.slider.options"></rzslider>
         div.containOutputs
-            p.leftOut {{$ctrl.filters.price.priceMin | currency:"$":0}}
-            p.rightOut {{$ctrl.filters.price.priceMax | currency:"$":0}}
+            p.leftOut {{$ctrl.filters.price.priceMin | currency:"ARS":0}}
+            p.rightOut {{$ctrl.filters.price.priceMax | currency:"ARS":0}}
